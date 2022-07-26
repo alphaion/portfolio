@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Raleway:wght@400;500&display=swap");
+:root {
+  --data-color-primary: #F6F1DE;
+  --data-color-secondary: #3D3739;
+  --data-color-accent: #F2CE47;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Poppins";
+  overflow-x: hidden;
+  background-color: var(--data-color-primary);
+  color: var(--data-color-secondary);
+}
+
+.wrapper {
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+}
+
+.navbar {
+  margin: 2em;
+}
+
+.navbar-brand,
+.nav-link {
+  margin: 0 1.45em 0 0;
+}
+
+.firstSection {
+  margin: 4em auto;
+}
+
+.welcome-text {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 52px;
+  text-align: center;
+  letter-spacing: 0.25px;
+  text-transform: capitalize;
+}
+
+.caseStudySection {
+  width: 100%;
+  margin: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.caseStudy {
+  width: 500px;
+  height: auto;
+}
+
+.caseStudy img {
+  width: 100%;
+  height: 280px;
+  background-position: center center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.title {
+  margin: 15px 0 0 0;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 40px;
+  letter-spacing: 0.15px;
+}
+
+.subtitle {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 36px;
+  letter-spacing: 0.5px;
+}
+
+.readmore {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 40px;
+  letter-spacing: 0.25px;
+}
+
+.readmore img {
+  width: 24px;
+  height: 20px;
+}
+/*# sourceMappingURL=style.css.map */
