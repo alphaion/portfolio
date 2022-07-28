@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Raleway:wght@400;500&display=swap');
 
 :root {
-    --data-color-primary: #EBF2FF;
+    --data-color-primary: #ffffff;
     --data-color-secondary: #0A0547;
     --data-color-accent: #0057FF;
 }
@@ -10,8 +10,8 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
     font-family: "Poppins";
-    overflow-x: hidden;
 }
 
 .wrapper {
@@ -19,6 +19,7 @@
     background-color: var(--data-color-primary);
     align-items: center;
     margin: 0 auto;
+    overflow: hidden;
 }
 
 .navbar {
@@ -31,9 +32,17 @@
 }
 
 .firstSection {
+    width: 100%;
     margin: 3em auto;
     text-align: center;
-    height: auto;
+}
+.url{
+    text-decoration: none;
+}
+.myImg {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
 }
 
 .welcome-text {
@@ -48,13 +57,16 @@
 
 .button {
     text-decoration: none;
+    border-radius: 6px;
     padding: 0.8em 1.8em;
     background-color: var(--data-color-accent);
     color: var(--data-color-primary);
 }
-.button:hover{
+
+.button:hover {
     color: var(--data-color-primary);
 }
+
 .button span {
     font-weight: 600;
     font-size: 14px;
@@ -63,14 +75,29 @@
 }
 
 .caseStudySection {
-    width: 1400px;
-    max-width: 100%;
-    margin: 2em auto 0em auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    width: 100%;
 }
 
+.caseStudyEnlarge {
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    justify-items: center;
+    margin: 0em auto;
+}
+
+.caseStudyEnlarge img {
+    margin: 2em auto;
+    width: 80%;
+}
+
+.caseStudySmall {
+    display: none;
+}
+
+/* Previous Version
 .caseStudy {
     margin: 2em;
     width: 500px;
@@ -87,10 +114,16 @@
     object-position: center;
     border-radius: 10px;
 }
+*/
+
+.caseStudyInfo {
+    margin: 15px 0 0 10px;
+    text-align: left;
+}
 
 .title {
-    margin: 15px 0 0 0;
     font-family: 'Poppins';
+    color: var(--data-color-secondary);
     font-weight: 500;
     font-size: 20px;
     line-height: 40px;
@@ -99,6 +132,7 @@
 
 .subtitle {
     font-family: 'Poppins';
+    color: var(--data-color-secondary);
     font-weight: 200;
     font-size: 16px;
     line-height: 36px;
@@ -107,8 +141,8 @@
 }
 
 .readmore {
-    margin-top: 1em;
     font-family: 'Poppins';
+    color: var(--data-color-accent);
     font-weight: 500;
     font-size: 16px;
     line-height: 40px;
@@ -116,37 +150,51 @@
 }
 
 .readmore img {
-    width: 24px;
-    height: 20px;
+    width: 20px;
 }
 
-.behanceBg {
-    background-color: var(--data-color-accent);
-    width: 1600px;
-    padding: 2em 1em;
-    margin: 1em auto 0em auto;
-    max-width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
+@media only screen and (max-width: 700px) {
+    .button {
+        padding: 0.45em 0.85em;
 
-.behance {
-    margin: 2em;
-    width: 500px;
-    height: auto;
-}
+        span {
+            font-size: 10px;
+        }
+    }
 
-.behance-title,
-.behance-subtitle {
-    color: var(--data-color-primary);
-}
+    .myImg {
+        width: 120px;
+        height: 120px;
+    }
 
-.behance-btn {
-    color: var(--data-color-primary);
-}
+    .welcome-text {
+        font-size: 24px;
+        line-height: 38px;
+        letter-spacing: 0.15px;
+    }
 
-.readmore img {
-    width: 24px;
-    height: 20px;
+    .caseStudyEnlarge {
+        display: none;
+    }
+
+    .caseStudySmall {
+        display: block;
+        margin: 2em auto;
+        width: 80%;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        justify-items: center;
+        margin: 0em auto;
+    }
+
+    .caseStudySmall .instyleCover,
+    .forbesCover {
+        width: 100%;
+    }
+
+    .caseStudySmall .caseStudy {
+        margin-top: 3em;
+    }
 }
