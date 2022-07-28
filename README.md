@@ -1,2 +1,2 @@
 # UX Portfolio
-uxrishu.github.io/
+https://uxrishu.github.io/
