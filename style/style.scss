@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Raleway:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Questrial&family=Raleway:wght@400;500;700&display=swap');
 
 :root {
     --data-color-primary: #ffffff;
@@ -36,9 +36,7 @@
     margin: 3em auto;
     text-align: center;
 }
-.url{
-    text-decoration: none;
-}
+
 .myImg {
     width: 180px;
     height: 180px;
@@ -55,16 +53,16 @@
     text-transform: capitalize;
 }
 
+.welcome-text span {
+    font-family: 'Raleway';
+    font-weight: 700;
+}
+
 .button {
-    text-decoration: none;
     margin-top: 1em;
     border-radius: 6px;
     padding: 0.8em 1.8em;
     background-color: var(--data-color-accent);
-    color: var(--data-color-primary);
-}
-
-.button:hover {
     color: var(--data-color-primary);
 }
 
@@ -75,10 +73,21 @@
     text-transform: uppercase;
 }
 
+.url {
+    text-decoration: none;
+}
+.url span {
+    margin-left: 0.6em;
+}
+
+.url:hover {
+    color: var(--data-color-primary);
+}
+
+
 .caseStudySection {
     width: 100%;
 }
-
 .caseStudyEnlarge {
     width: 100%;
     height: auto;
@@ -88,7 +97,6 @@
     justify-items: center;
     margin: 0em auto;
 }
-
 .caseStudyEnlarge img {
     margin: 2em auto;
     width: 80%;
@@ -97,25 +105,6 @@
 .caseStudySmall {
     display: none;
 }
-
-/* Previous Version
-.caseStudy {
-    margin: 2em;
-    width: 500px;
-    height: auto;
-    background-color: var(--data-color-primary);
-    color: var(--data-color-secondary);
-}
-
-.postCover {
-    width: 100%;
-    height: 280px;
-    background-position: center center;
-    object-fit: cover;
-    object-position: center;
-    border-radius: 10px;
-}
-*/
 
 .caseStudyInfo {
     margin: 15px 0 0 10px;
@@ -154,12 +143,86 @@
     width: 20px;
 }
 
+.contactSection {
+    width: 80%;
+    height: auto;
+    padding: 1em 0 2em 0;
+    margin: 2em auto;
+    border-radius: 20px;
+    text-align: center;
+    background: linear-gradient(94.67deg, #0057FF 0.16%, #0A3FA6 100%);
+}
+
+.contactTitle {
+    font-family: 'Questrial';
+    font-style: normal;
+    margin: 0.8em auto;
+    width: 800px;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 73px;
+    text-align: center;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: var(--data-color-primary);
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+}
+
+.buttons a {
+    border-radius: 6px;
+    margin: 1em;
+    border: 1.5px solid var(--data-color-primary);
+    font-weight: 500;
+    letter-spacing: 0.2px;
+    padding: 0.8em 0.4em;
+    width: 140px;
+    height: 52px;
+    color: var(--data-color-primary);
+}
+
+footer {
+    width: 100%;
+    padding: 2em 0 1em 0;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+}
+
+footer p {
+    text-transform: uppercase;
+    color: #9D9D9D;
+}
+
+@media only screen and (max-width: 1080px) {
+    .contactTitle {
+        width: 600px;
+        font-size: 44px;
+        line-height: 64px;
+    }
+}
+
+@media only screen and (max-width: 810px) {
+    .contactTitle {
+        width: 450px;
+        font-size: 34px;
+        line-height: 50px;
+    }
+}
+
 @media only screen and (max-width: 700px) {
 
     .navbar {
         margin: 0.4em;
     }
-    
+
     .button {
         padding: 0.45em 0.85em;
 
@@ -177,6 +240,7 @@
         font-size: 18px;
         line-height: 30px;
         letter-spacing: 0.15px;
+        margin: 0.5em;
     }
 
     .caseStudyEnlarge {
@@ -194,6 +258,16 @@
         justify-items: center;
     }
 
+    .contactSection {
+        width: 90%;
+    }
+
+    .contactTitle {
+        width: 360px;
+        font-size: 28px;
+        line-height: 40px;
+    }
+
     .caseStudySmall .instyleCover,
     .forbesCover {
         width: 100%;
@@ -201,5 +275,21 @@
 
     .caseStudySmall .caseStudy {
         margin-top: 3em;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .contactTitle {
+        width: 290px;
+        font-size: 22px;
+        line-height: 30px;
+    }
+}
+
+@media only screen and (max-width: 330px) {
+    .contactTitle {
+        width: 200px;
+        font-size: 16px;
+        line-height: 28px;
     }
 }
