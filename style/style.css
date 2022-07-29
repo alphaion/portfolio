@@ -181,6 +181,11 @@
   color: var(--data-color-primary);
 }
 
+.contactContent p a {
+  text-decoration: underline;
+  color: var(--data-color-primary);
+}
+
 .contactContent .author {
   font-family: 'Over the Rainbow', cursive;
   font-size: 24px;
@@ -192,7 +197,7 @@
   font-size: 15px;
 }
 
-.contactContent a {
+.contactContent .url {
   margin: 1em 1em 1em 0em;
 }
 
