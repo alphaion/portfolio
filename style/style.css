@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Questrial&family=Raleway:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Over+the+Rainbow&family=Poppins:wght@400;500;600&family=Questrial&family=Raleway:wght@400;500;700&display=swap");
 :root {
   --data-color-primary: #ffffff;
   --data-color-secondary: #0A0547;
@@ -154,89 +154,70 @@
 .contactSection {
   width: 80%;
   height: auto;
-  padding: 1em 0 2em 0;
+  padding: 0.6em 0 2em 0;
   margin: 2em auto;
   border-radius: 20px;
   text-align: center;
   background: linear-gradient(94.67deg, #0057FF 0.16%, #0A3FA6 100%);
 }
 
-.contactTitle {
-  font-family: 'Questrial';
-  font-style: normal;
-  margin: 0.8em auto;
-  width: 800px;
-  font-weight: 400;
-  font-size: 56px;
-  line-height: 73px;
-  text-align: center;
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
-  color: var(--data-color-primary);
-}
-
-.buttons {
+.contactContent {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  text-align: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  justify-items: center;
+  text-align: left;
+  margin: 1em;
 }
 
-.buttons a {
-  border-radius: 6px;
-  margin: 1em;
-  border: 1.5px solid var(--data-color-primary);
-  font-weight: 500;
-  letter-spacing: 0.2px;
-  padding: 0.8em 0.4em;
-  width: 140px;
-  height: 52px;
+.contactContent p {
+  width: 70%;
+  font-family: 'Poppins';
+  margin: 1.6em;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 39px;
+  letter-spacing: 0.5px;
   color: var(--data-color-primary);
+}
+
+.contactContent .author {
+  font-family: 'Over the Rainbow', cursive;
+  font-size: 24px;
+}
+
+.contactContent .mail {
+  opacity: 0.6;
+  letter-spacing: 0.85px;
+  font-size: 15px;
+}
+
+.contactContent a {
+  margin: 1em 1em 1em 0em;
 }
 
 footer {
   width: 100%;
-  padding: 2em 0 1em 0;
+  padding: 1.5em 0 0.5em 0;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   margin: 0 auto;
+  background-color: #ECF0F6;
   text-align: center;
 }
 
 footer p {
-  text-transform: uppercase;
-  color: #9D9D9D;
-}
-
-@media only screen and (max-width: 1080px) {
-  .contactTitle {
-    width: 600px;
-    font-size: 44px;
-    line-height: 64px;
-  }
-}
-
-@media only screen and (max-width: 810px) {
-  .contactTitle {
-    width: 450px;
-    font-size: 34px;
-    line-height: 50px;
-  }
+  color: #878787;
 }
 
 @media only screen and (max-width: 700px) {
   .navbar {
     margin: 0.4em;
+  }
+  footer p {
+    color: #878787;
+    font-size: 12px;
   }
   .button {
     padding: 0.45em 0.85em;
@@ -274,11 +255,6 @@ footer p {
   .contactSection {
     width: 90%;
   }
-  .contactTitle {
-    width: 360px;
-    font-size: 28px;
-    line-height: 40px;
-  }
   .caseStudySmall .instyleCover,
   .forbesCover {
     width: 100%;
@@ -286,21 +262,9 @@ footer p {
   .caseStudySmall .caseStudy {
     margin-top: 3em;
   }
-}
-
-@media only screen and (max-width: 400px) {
-  .contactTitle {
-    width: 290px;
-    font-size: 22px;
-    line-height: 30px;
-  }
-}
-
-@media only screen and (max-width: 330px) {
-  .contactTitle {
-    width: 200px;
-    font-size: 16px;
-    line-height: 28px;
+  .contactContent {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 /*# sourceMappingURL=style.css.map */
