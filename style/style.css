@@ -33,16 +33,15 @@
   margin: 0 1.45em 0 0;
 }
 
-.firstSection {
-  width: 100%;
-  margin: 3em auto;
-  text-align: center;
+.logo {
+  width: 64px;
+  height: auto;
 }
 
-.myImg {
-  width: 180px;
-  height: 180px;
-  border-radius: 50%;
+.firstSection {
+  width: 100%;
+  margin: 10em auto;
+  text-align: center;
 }
 
 .welcome-text {
@@ -230,9 +229,8 @@ footer p {
   .button span {
     font-size: 10px;
   }
-  .myImg {
-    width: 100px;
-    height: 100px;
+  .firstSection {
+    margin: 4em auto;
   }
   .welcome-text {
     font-size: 18px;
