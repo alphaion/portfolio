@@ -30,19 +30,15 @@
 .nav-link {
     margin: 0 1.45em 0 0;
 }
-
+.logo{
+    width: 64px;
+    height: auto;
+}
 .firstSection {
     width: 100%;
-    margin: 3em auto;
+    margin: 10em auto;
     text-align: center;
 }
-
-.myImg {
-    width: 180px;
-    height: 180px;
-    border-radius: 50%;
-}
-
 .welcome-text {
     font-family: 'Raleway';
     font-weight: 400;
@@ -220,10 +216,8 @@ footer p {
             font-size: 10px;
         }
     }
-
-    .myImg {
-        width: 100px;
-        height: 100px;
+    .firstSection {
+        margin: 4em auto;
     }
 
     .welcome-text {
