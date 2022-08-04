@@ -6,123 +6,117 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-
+    <link rel="icon" type="image/x-icon" href="./icons/favicon.ico">
     <link rel="stylesheet" href="./style/style.css">
     <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
     <div class="wrapper">
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#work"><img class="logo" src="./icons/logo.svg" alt=""></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav ms-auto">
-                        <a class="nav-link active" href="#work">Work</a>
-                        <a class="nav-link active" href="#about">About</a>
-                        <a class="nav-link active" href="#about">Contact</a>
-                    </div>
+        <header class="text-gray-600 body-font">
+            <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+                <nav class="flex lg:w-2/5 flex-wrap items-center text-base md:ml-auto">
+                    <a class="mr-5">Work</a>
+                    <a class="mr-5">About</a>
+                    <a class="mr-5">Contact</a>
+                </nav>
+                <a
+                    class="flex order-first lg:order-none lg:w-1/5 title-font font-medium items-center text-gray-900 lg:items-center lg:justify-center mb-4 md:mb-0">
+                    <span class="ml-3 text-xl"><img src="./icons/logo.svg" alt=""></span>
+                </a>
+                <div class="lg:w-2/5 inline-flex lg:justify-end ml-5 lg:ml-0">
+                    <ul class="flex">
+                        <li class="mr-5"><a href="#behance"><img src="./icons/Vector.svg" alt=""></a></li>
+                        <li class="mr-5"><a href="#instagram"><img src="./icons/Vector-1.svg" alt=""></a></li>
+                        <li class="mr-5"><a href="#linkedIn"><img src="./icons/Vector-2.svg" alt=""></a></li>
+                    </ul>
                 </div>
-
             </div>
-        </nav>
+        </header>
 
 
         <div class="firstSection">
             <!-- <img class="myImg" src="./images/myimg.png" alt="" draggable="false"> -->
-            <div class="welcome-text">Hello! I’m <span>Rishabh</span>.<br>User Experience Designer and Developer.
-            </div>
-            <a class="button url"
+            <div class="welcome-text"><span class="hey">Hello, I'm Rishabh</span><br>Creative <span
+                    class="highlighted">User
+                    Experience Designer</span> based in India.</div>
+            <img id="work" class="arrowUpsideDown" src="./icons/arrowupsidedown.svg" alt="">
+            <!-- <a class="button url"
                 href="https://drive.google.com/file/d/1RRk8LanOzu1khloF7_vtdLo6qclqxkYY/view?usp=sharing"
-                target="_blank"><span>Resume</span></a>
+                target="_blank"><span>Resume</span></a> -->
         </div>
 
-        <div class="caseStudySection" id="work">
-
-            <div class="caseStudyEnlarge">
-                <a class="url" href="https://uxrishu.medium.com/case-study-instyle-app-9df676194ce6" target="_blank"
-                    rel="noopener noreferrer">
-                    <img src="./images/instylecover.svg" alt="instyleCover" draggable="false">
-                </a>
-                <a class="url" href="https://www.behance.net/gallery/149078307/Forbes-Mobile-App" target="_blank"
-                    rel="noopener noreferrer">
-                    <img src="./images/forbescover.svg" alt="forbesCover" draggable="false">
-                </a>
-
-            </div>
-
-            <div class="caseStudySmall">
-                <div class="caseStudy">
-                    <a class="url" href="https://uxrishu.medium.com/case-study-instyle-app-9df676194ce6"
-                        target="_blank">
-                        <img class="instyleCover" src="./images/instylecoversmall.png" alt="" draggable="false">
-                        <div class="caseStudyInfo">
-                            <div class="title">Instyle App</div>
-                            <div class="subtitle">A UX Design Project that focuses on people's needs who are tired of
-                                sitting and waiting at the salons for their turn. </div>
-                            <div class="readmore">read case study <img src="./icons/arrow.svg" alt="" draggable="false">
-                            </div>
+        <div class="caseStudySection">
+            <div class="caseStudy">
+                <a href="#">
+                    <img class="cover" src="./images/forbescover.svg" alt="">
+                    <div class="caseStudyInfo">
+                        <div class="title">Forbes App</div>
+                        <div class="subtitle">Optimizing the reading experience of the forbes app. Focuses on people’s
+                            frustration and goals.</div>
+                        <div class="subButton"><a href="#">read case study </a><img class="arrow"
+                                src="./icons/arrow.svg" alt="">
                         </div>
-                    </a>
-                </div>
+                    </div>
+                </a>
+            </div>
 
-                <div class="caseStudy">
-                    <a class="url" href="https://www.behance.net/gallery/149078307/Forbes-Mobile-App" target="_blank">
-                        <img class="forbesCover" src="./images/forbescoversmall.png" alt="" draggable="false">
-                        <div class="caseStudyInfo">
-                            <div class="title">Forbes App</div>
-                            <div class="subtitle">Improving the reading experience of the app. The goal of the project
-                                is to re-design forbes mobile app. </div>
-                            <div class="readmore">view on Behance <img src="./icons/arrow.svg" alt="" draggable="false">
-                            </div>
+            <div class="caseStudy">
+                <a href="#">
+                    <img class="cover" src="./images/instylecover.svg" alt="">
+                    <div class="caseStudyInfo">
+                        <div class="title">Instyle App</div>
+                        <div class="subtitle">Optimizing the reading experience of the forbes app. Focuses on people’s
+                            frustration and goals.</div>
+                        <div class="subButton"><a href="#">read case study </a><img class="arrow"
+                                src="./icons/arrow.svg" alt="">
                         </div>
-                    </a>
-                </div>
+                    </div>
+                </a>
             </div>
         </div>
 
-        <div class="contactSection" id="about">
-            <div class="contactContent">
-                <p>It all started back in 2020 when I was in my college completing my BSc with no interest. Soon I
-                    switched from BSc to BCA where I learned a lot about coding and web development. That’s where I
-                    found the term UX Design, sounds fascinating, Isn’t it?</p>
-
-                <p>I enrolled to <a
-                        href="https://drive.google.com/file/d/1H56TbBFis_dBPjE7lc7YA7ByxtDIVGnn/view?usp=sharing"
-                        target="_blank">Google UX Course</a> on coursera where I learned more about UX Design in depth,
-                    from conducting UX Research, Ideation to Prototype.
-                    And now here, I helping businesses to make their products equitable and accessible.
-                    <br><br><span class="author">-Rishabh</span><br><span class="mail">uxrishu@gmail.com</span><br>
-
-                    <a class="url" href="https://www.behance.net/uxrishu" target="_blank" rel="noopener noreferrer"><img
-                            src="./icons/Vector.svg" alt=""></a>
-                    <a class="url" href="https://www.instagram.com/ux.rishu/" target="_blank"
-                        rel="noopener noreferrer"><img src="./icons/Vector-1.svg" alt=""></a>
-                    <a class="url" href="https://github.com/uxrishu" target="_blank" rel="noopener noreferrer"><img
-                            src="./icons/Vector-2.svg" alt=""></a>
-                    <a class="url" href="https://www.linkedin.com/in/uxrishu/" target="_blank"
-                        rel="noopener noreferrer"><img src="./icons/Vector-3.svg" alt=""></a>
-
-                </p>
-
+        <div class="aboutMe">
+            <img class="myImg" src="./images/myimg.png" alt="">
+            <div class="myInfo">
+                <div class="title">aboutme</div>
+                <div class="subtitle">I’m Rishabh Singh, 21 year old, a user experience designer based in Allahabad,
+                    India, with experience in delivering end-to-end UX/UI design for software products. I'm passionate
+                    about improving the lives of others through design and am constantly looking to learn new things
+                    everyday.</div>
+                <div class="button"><a href="#">Resume</a></div>
             </div>
-
         </div>
 
-        <footer>
-            <p>Design with Empathy & Dedication<br>
-                uxrishu | India</p>
-        </footer>
-
+        <div class="experience">
+            <div class="blockOne">
+                <div class="title">experience</div>
+                <div class="title-2">Worked as a UX Designer in Livinart Design Agency.</div>
+            </div>
+            <div class="blockTwo">
+                <div class="subtitle">I worked in Livinart Group (design agency based in Bhopal, MP) as UX and UI
+                    Designer where I worked on multiple projects. My role and responsibility in Livinart Group was to
+                    identify “what’s wrong with the current design of app and website” and redesign it with the help of
+                    user research and ux methods.</div>
+            </div>
+        </div>
     </div>
-    <script src="./script/script.js"></script>
+
+    <div class="contact">
+        <div class="wrapper">
+            <div class="title-3">Don’t be a stranger, Let’s talk!</div>
+            <div class="info">
+                <p>uxrishu@gmail.com</p>
+                <ul class="flex socialMedia">
+                    <li class="mr-5"><a href="#behance"><img src="./icons/Vector-white.svg" alt=""></a></li>
+                    <li class="mr-5"><a href="#instagram"><img src="./icons/Vector-1-white.svg" alt=""></a></li>
+                    <li class="mr-5"><a href="#linkedIn"><img src="./icons/Vector-2-white.svg" alt=""></a></li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
