@@ -23,9 +23,6 @@
     align-items: center;
     margin: 0em auto
 }
-.container{
-    margin: 1em;
-}
 body {
     color: var(--data-color-secondary);
     background-color: var(--data-color-primary);
@@ -46,6 +43,7 @@ body {
 .secondary-button{
     color: var(--data-color-accent);
     font-weight: 500;
+    font-size: 18px;
 }
 
 .social-media{
@@ -70,12 +68,14 @@ body {
 .subtitle{
     font-size: 20px;
     font-weight: 400;
+    opacity: 0.6;
 }
 
 .category{
     font-size: 14px;
     font-weight: 600;
     text-transform: uppercase;
+    opacity: 0.6;
 }
 
 // .bgImg{
