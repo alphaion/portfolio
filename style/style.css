@@ -1,6 +1,16 @@
 @font-face {
-  font-family: "Satoshi";
-  src: url("../res/Fonts/WEB/css/satoshi.css");
+  font-family: "Satoshi Medium";
+  src: url("../res/Fonts/OTF/Satoshi-Medium.otf");
+}
+
+@font-face {
+  font-family: "Satoshi Regular";
+  src: url("../res/Fonts/OTF/Satoshi-Regular.otf");
+}
+
+@font-face {
+  font-family: "Satoshi Bold";
+  src: url("../res/Fonts/OTF/Satoshi-Bold.otf");
 }
 
 :root {
@@ -46,7 +56,7 @@ body {
 
 .secondary-button {
   color: var(--data-color-accent);
-  font-weight: 500;
+  font-family: "Satoshi Medium";
   font-size: 18px;
 }
 
@@ -61,24 +71,50 @@ body {
 .big-title {
   font-size: 52px;
   line-height: 70px;
-  font-weight: 500;
+  font-family: "Satoshi Medium";
 }
 
 .title {
   font-size: 32px;
-  font-weight: 500;
+  font-family: "Satoshi Medium";
 }
 
 .subtitle {
   font-size: 20px;
-  font-weight: 400;
   opacity: 0.6;
+  font-family: "Satoshi Regular";
 }
 
 .category {
   font-size: 14px;
-  font-weight: 600;
+  font-family: "Satoshi Bold";
   text-transform: uppercase;
   opacity: 0.6;
+}
+
+@media only screen and (max-width: 640px) {
+  .big-title {
+    font-size: 38px;
+    line-height: 60px;
+    font-family: "Satoshi Medium";
+  }
+  .footer-logo {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .big-title {
+    font-size: 26px;
+    line-height: 40px;
+    font-family: "Satoshi Medium";
+  }
+  .name {
+    font-size: 16px;
+    font-family: "Satoshi Medium";
+  }
+  .footer-logo {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */
