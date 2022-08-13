@@ -16,7 +16,7 @@
 :root {
     --data-color-primary: #ffffff;
     --data-color-secondary: #121117;
-    --data-color-accent: #2d00f7;
+    --data-color-accent: #00B8FC;
 }
 
 * {
@@ -27,18 +27,45 @@
     font-family: "Satoshi";
 }
 
+.custom__cursor__inner {
+    height: 7.5px;
+    width: 7.5px;
+    position: fixed;
+    transform: translate(0px, 0px);
+    background-color: var(--data-color-accent);
+    border-radius: 50%;
+    transition: height .3s cubic-bezier(0.46, 0.03, 0.52, 0.96), width .3s cubic-bezier(0.46, 0.03, 0.52, 0.96);
+    z-index: 5000;
+    pointer-events: none;
+}
+
+.custom__cursor__outer {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: 1px solid var(--data-color-secondary);
+    background-color: transparent;
+    position: fixed;
+    z-index: 5000;
+    transform: translate(0px, 0px);
+    pointer-events: none;
+    opacity: 0.4;
+}
+
 .wrapper {
     max-width: 100%;
     width: 1300px;
     align-items: center;
-    margin: 0em auto
+    margin: 0em auto;
 }
+
 
 body {
     color: var(--data-color-secondary);
     background-color: var(--data-color-primary);
     overflow-x: hidden;
-    font-family: "Satoshi";
+    cursor: none;
+    font-family: "Satoshi Regular";
 }
 
 .logo {
@@ -61,10 +88,25 @@ body {
     width: 24px;
 }
 
+.heroImg {
+    width: 380px;
+    height: auto;
+}
+
+#myImg {
+    width: 220px;
+    height: 220px;
+}
+
+.bullet-list {
+    list-style: circle;
+}
+
 // Typography
 
 .name {
     font-size: 20px;
+    font-family: "Satoshi Regular";
 }
 
 .big-title {
@@ -91,6 +133,21 @@ body {
     opacity: 0.6;
 }
 
+.case-study-cover {
+    filter: grayscale(1);
+    transition: 500ms all ease-out;
+}
+
+.case-study:hover {
+    .case-study-cover {
+        filter: grayscale(0);
+    }
+}
+
+a {
+    cursor: none;
+}
+
 // .bgImg{
 //     position: absolute;
 //     background-image: url("../images/bgImg2.jpg");
@@ -106,6 +163,18 @@ body {
 //     background-position: top center;
 //     z-index: -99;
 // }
+@media only screen and (max-width: 930px) {
+    .heroImg {
+        width: 320px;
+        height: auto;
+    }
+
+    .big-title {
+        font-size: 42px;
+        line-height: 56px;
+        font-family: "Satoshi Medium";
+    }
+}
 
 @media only screen and (max-width: 640px) {
     .big-title {
@@ -113,10 +182,15 @@ body {
         line-height: 60px;
         font-family: "Satoshi Medium";
     }
-    .footer-logo{
+
+    .footer-logo {
         display: none;
     }
 
+    .custom__cursor__inner,
+    .custom__cursor__outer {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 320px) {
@@ -125,11 +199,8 @@ body {
         line-height: 40px;
         font-family: "Satoshi Medium";
     }
+
     .name {
         font-size: 16px;
-        font-family: "Satoshi Medium";
-    }
-    .footer-logo{
-        display: none;
     }
 }

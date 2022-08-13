@@ -16,10 +16,13 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://kit.fontawesome.com/df18b2a205.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 </head>
 
 <body>
+    <div class="custom__cursor__outer"></div>
+    <div class="custom__cursor__inner"></div>
     <div class="wrapper">
         <nav class="mt-4">
             <div class="mx-auto">
@@ -86,8 +89,8 @@
                 </ul>
             </div>
         </nav>
-        <section class="body-font">
-            <div class="sm:mt-2 mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+        <section class="body-font scroll-section">
+            <div class="sm:mt-2 mx-auto flex px-5 py-24 md:flex-row flex-col items-center justify-between">
                 <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center"
                     data-aos="fade-up" data-aos-delay="600">
                     <div class="name">Hi! I'm Rishabh</div>
@@ -100,18 +103,19 @@
                                 target="_blank">Resume</a></button>
                     </div>
                 </div>
-                <div class="lg:max-w-lg lg:w-full md:w-1/2" data-aos="fade-up" data-aos-delay="700">
-                    <img class="object-cover object-center rounded heroImg" id="mainImg" src="" alt="hero" draggable="false">
+                <div class="lg:max-w-lg lg:w-full" data-aos="fade-up" data-aos-delay="700">
+                    <img class="object-cover object-center rounded heroImg" id="mainImg" src="" alt="hero"
+                        draggable="false">
                 </div>
             </div>
         </section>
-        <section class="body-font" id="work">
+        <section class="body-font scroll-section" id="work">
             <div class="container px-5 py-24 mx-auto">
                 <div class="flex flex-wrap -m-4 justify-around">
-                    <div class="p-4 md:w-1/2" data-aos="fade-up">
+                    <div class="case-study p-4 md:w-1/2" data-aos="fade-up" data-aos-delay="200">
                         <div class="h-full overflow-hidden">
-                            <img class="lg:h-96 md:h-64 w-full object-cover object-center" src="./res/images/forbes.svg"
-                                alt="blog" draggable="false">
+                            <img class="case-study-cover lg:h-96 md:h-64 w-full object-cover object-center"
+                                src="./res/images/forbes.svg" alt="blog" draggable="false">
                             <div class="py-8">
                                 <h2 class="tracking-widest category mb-1">UX CASE STUDY</h2>
                                 <h1 class="mb-3 title">Forbes App</h1>
@@ -132,9 +136,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="p-4 md:w-1/2" data-aos="fade-up" data-aos-delay="400">
+                    <div class="case-study p-4 md:w-1/2" data-aos="fade-up" data-aos-delay="400">
                         <div class="h-full overflow-hidden">
-                            <img class="lg:h-96 md:h-64 w-full object-cover object-center"
+                            <img class="case-study-cover lg:h-96 md:h-64 w-full object-cover object-center"
                                 src="./res/images/instyle.svg" alt="blog" draggable="false">
                             <div class="py-8">
                                 <h2 class="tracking-widest category mb-1">UX CASE STUDY</h2>
@@ -160,14 +164,17 @@
             </div>
         </section>
 
-        <section class="body-font" id="about">
+        <section class="body-font scroll-section" id="about">
             <div class="container px-5 py-24 mx-auto">
                 <div class="flex flex-col text-center w-full mb-20">
+                    <!-- <img id="myImg" class="mx-auto m-4" src="./res/images/bgImg.svg" alt=""> -->
                     <h1 class=" title mb-4" data-aos="fade-up">About Me</h1>
                     <p class="lg:w-2/3 mx-auto leading-relaxed subtitle" data-aos="fade-up" data-aos-delay="400">I’m
                         Rishabh Singh, 21 year old, a user
-                        experience designer based in Allahabad, India, with experience in delivering end-to-end UX/UI
-                        design for software products.
+                        experience designer based in Noida, Uttar Pradesh, <span class="font-bold">with experience in
+                            delivering
+                            end-to-end UX/UI
+                            design for Apps and Websites.</span>
                         I'm passionate about improving the lives of others through design and am constantly looking to
                         learn new things everyday.</p>
                 </div>
@@ -179,8 +186,14 @@
                             <i class="fa-solid fa-brain"></i>
                         </div>
                         <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">UX Designer</h2>
-                        <p class="leading-relaxed text-base mb-4">Worked with design agency on making the best product
-                            for best user experience. </p>
+                        <p class="leading-relaxed text-base mb-4">Google Certified User Experience Designer with over 1+ year of experience.<br>
+                            <ul class="bullet-list">
+                                <li>User Research</li>
+                                <li>Ideation</li>
+                                <li>Wireframes</li>
+                                <li>Prototype</li>
+                            </ul>
+                        </p>
                     </div>
                     <div class="xl:w-1/3 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60"
                         data-aos="fade-up" data-aos-delay="500">
@@ -189,8 +202,14 @@
                             <i class="fa-solid fa-eye-dropper"></i>
                         </div>
                         <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">UI Designer</h2>
-                        <p class="leading-relaxed text-base mb-4">I truly care about User Interface. Typography, Layout,
-                            Visual are the first impression of any product.</p>
+                        <p class="leading-relaxed text-base mb-4">I truly care about User Interface. It's the first
+                            impression of every product.<br>
+                            <ul class="bullet-list">
+                                <li>Typography</li>
+                                <li>Layouts</li>
+                                <li>Colors</li>
+                                <li>Iconograpghy</li>
+                            </ul>
                     </div>
                     <div class="xl:w-1/3 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60"
                         data-aos="fade-up" data-aos-delay="600">
@@ -200,7 +219,14 @@
                         </div>
                         <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">Frontend Developer</h2>
                         <p class="leading-relaxed text-base mb-4">With over 4 years of experience in developement.
-                            Github Open Source Contributor.</p>
+                            Github Open Source Contributor. <br>
+                            <ul class="bullet-list">
+                                <li>HTML</li>
+                                <li>CSS, SCSS, Sass</li>
+                                <li>JS, Jquery</li>
+                                <li>Bootstrap, Tailwind</li>
+                            </ul>
+                        </p>
                     </div>
                 </div>
                 <button class="category flex mx-auto mt-16 primary-button border-0 py-2 px-8 focus:outline-none rounded"
@@ -209,9 +235,10 @@
             </div>
         </section>
 
-        <footer class="body-font" id="contact">
+        <footer class="body-font scroll-section" id="contact">
             <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
-                <a class="footer-logo flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+                <a
+                    class="footer-logo flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
                     <span class="ml-3 text-xl"><img src="./res/icons/logo.svg" alt="" draggable="false"></span>
                     <span class="ml-3 text-xl">Rishabh Singh</span>
                 </a>
