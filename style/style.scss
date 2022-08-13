@@ -16,7 +16,7 @@
 :root {
     --data-color-primary: #ffffff;
     --data-color-secondary: #121117;
-    --data-color-accent: #00B8FC;
+    --data-color-accent: #F59E00;
 }
 
 * {
@@ -26,7 +26,10 @@
     scroll-behavior: smooth;
     font-family: "Satoshi";
 }
-
+::selection{
+    background-color: var(--data-color-accent);
+    color: var(--data-color-primary);
+}
 .custom__cursor__inner {
     height: 7.5px;
     width: 7.5px;
@@ -58,16 +61,12 @@
     align-items: center;
     margin: 0em auto;
 }
-
-
 body {
     color: var(--data-color-secondary);
-    background-color: var(--data-color-primary);
     overflow-x: hidden;
     cursor: none;
     font-family: "Satoshi Regular";
 }
-
 .logo {
     width: 52px;
     height: auto;
@@ -97,7 +96,9 @@ body {
 .bullet-list {
     list-style: circle;
 }
-
+.icons{
+    background-color: #FFE6B8;
+}
 // Typography
 
 .big-title {

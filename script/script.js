@@ -8,7 +8,7 @@ btn.addEventListener("click", () => {
 
 AOS.init();
 
-const items = ["./res/images/heroImg01.svg", "./res/images/heroImg02.svg", "./res/images/heroImg03.svg", "./res/images/heroImg04.svg", "./res/images/heroImg05.svg"];
+const items = ["./res/images/heroImg01.svg", "./res/images/heroImg02.svg"];
 
 function random_item(items) {
     return items[Math.floor(Math.random() * items.length)];

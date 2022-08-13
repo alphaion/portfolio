@@ -16,7 +16,7 @@
 :root {
   --data-color-primary: #ffffff;
   --data-color-secondary: #121117;
-  --data-color-accent: #00B8FC;
+  --data-color-accent: #F59E00;
 }
 
 * {
@@ -26,6 +26,16 @@
           box-sizing: border-box;
   scroll-behavior: smooth;
   font-family: "Satoshi";
+}
+
+::-moz-selection {
+  background-color: var(--data-color-accent);
+  color: var(--data-color-primary);
+}
+
+::selection {
+  background-color: var(--data-color-accent);
+  color: var(--data-color-primary);
 }
 
 .custom__cursor__inner {
@@ -67,7 +77,6 @@
 
 body {
   color: var(--data-color-secondary);
-  background-color: var(--data-color-primary);
   overflow-x: hidden;
   cursor: none;
   font-family: "Satoshi Regular";
@@ -102,6 +111,10 @@ body {
 
 .bullet-list {
   list-style: circle;
+}
+
+.icons {
+  background-color: #FFE6B8;
 }
 
 .big-title {
