@@ -82,25 +82,12 @@ body {
   color: var(--data-color-primary);
   background-color: var(--data-color-accent);
   font-weight: 500;
-  letter-spacing: 0.8px;
 }
 
 .secondary-button {
   color: var(--data-color-accent);
   font-family: "Satoshi Medium";
   font-size: 18px;
-}
-
-.opacity-hover {
-  opacity: 0.6;
-  -webkit-transition: 300ms;
-  transition: 300ms;
-  -webkit-animation-timing-function: ease-out;
-          animation-timing-function: ease-out;
-}
-
-.opacity-hover:hover {
-  opacity: 1;
 }
 
 .heroImg {
@@ -137,6 +124,7 @@ body {
   font-size: 16px;
   font-family: "Satoshi Bold";
   text-transform: uppercase;
+  letter-spacing: 0.6px;
 }
 
 .case-study-cover {
