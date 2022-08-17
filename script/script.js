@@ -1,20 +1,4 @@
-// Navigation Menu
-const btn = document.querySelector("button.mobile-menu-button");
-const menu = document.querySelector(".mobile-menu");
-
-btn.addEventListener("click", () => {
-    menu.classList.toggle("hidden");
-});
-
 AOS.init();
-
-const items = ["./res/images/heroImg01.svg", "./res/images/heroImg02.svg"];
-
-function random_item(items) {
-    return items[Math.floor(Math.random() * items.length)];
-}
-document.getElementById('mainImg').srcset = random_item(items);
-
 //Jquery For Cursor
 $(window).ready(function () {
 
@@ -36,7 +20,23 @@ $(window).ready(function () {
         xp += ((mouseX - xp) / 6);
         yp += ((mouseY - yp) / 6);
         $(".custom__cursor__outer").css({
-            transform: 'translateX(' + (xp - 5) + 'px) translateY(' + (yp - 5) + 'px)'
+            transform: 'translateX(' + (xp - 9) + 'px) translateY(' + (yp - 9) + 'px)'
         });
     }, 10);
 });
+
+// Navigation Menu
+const btn = document.querySelector("button.mobile-menu-button");
+const menu = document.querySelector(".mobile-menu");
+
+btn.addEventListener("click", () => {
+    menu.classList.toggle("hidden");
+});
+
+// const items = ["./res/images/heroImg01.svg", "./res/images/heroImg02.svg"];
+
+// function random_item(items) {
+//     return items[Math.floor(Math.random() * items.length)];
+// }
+// document.getElementById('mainImg').srcset = random_item(items);
+
