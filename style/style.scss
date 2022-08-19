@@ -65,9 +65,9 @@ $heading-col: #C1A10F;
 
 body {
     color: $secondary-col;
-    overflow-x: hidden;
     cursor: none;
     font-family: "Satoshi Regular";
+    overflow-x: hidden;
 }
 
 .logo {
@@ -163,7 +163,11 @@ body {
     line-height: 70px;
     font-family: "Satoshi Medium";
 }
-
+.aboutme{
+    font-size: 26px;
+    line-height: 42px;
+    font-family: "Satoshi Medium";
+}
 .title {
     font-size: 30px;
     line-height: 52px;
@@ -214,7 +218,7 @@ body {
         font-family: "Satoshi Medium";
     }
 
-    .footer-logo {
+    #footer .footer-logo {
         display: none;
     }
 
@@ -225,7 +229,12 @@ body {
     .prototype{
         display: none;
     }
+    .aboutme{
+        font-size: 18px;
+        line-height: 30px;
+    }
 }
+
 
 @media only screen and (max-width: 320px) {
     .big-title {
