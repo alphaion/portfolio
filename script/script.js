@@ -1,4 +1,3 @@
-AOS.init();
 //Jquery For Cursor
 $(window).ready(function () {
 
@@ -39,4 +38,3 @@ btn.addEventListener("click", () => {
 //     return items[Math.floor(Math.random() * items.length)];
 // }
 // document.getElementById('mainImg').srcset = random_item(items);
-

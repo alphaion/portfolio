@@ -16,6 +16,7 @@
 $primary-col: #ffffff;
 $secondary-col: #121117;
 $accent-col: #FFD000;
+$heading-col: #C1A10F;
 
 * {
     padding: 0;
@@ -27,7 +28,7 @@ $accent-col: #FFD000;
 
 ::selection {
     background-color: $accent-col;
-    color: $primary-col;
+    color: $secondary-col;
 }
 
 .custom__cursor__inner {
@@ -74,7 +75,7 @@ body {
     height: auto;
 }
 .yellow{
-    color: $accent-col;
+    color: $heading-col;
 }
 .primary-button {
     color: $secondary-col;
@@ -94,7 +95,7 @@ body {
     color: $primary-col;
 }
 .secondary-button {
-    color: $accent-col;
+    color: $heading-col;
     font-family: "Satoshi Medium";
     font-size: 18px;
 }
@@ -108,7 +109,7 @@ body {
 .fa-envelope {
     border-radius: 50%;
     padding: 1em;
-    color: $primary-col;
+    color: $secondary-col;
     transform: scale(1.5);
     background-color: $accent-col;
 }
@@ -133,13 +134,8 @@ body {
     width: 220px;
     height: 220px;
 }
-
-.bullet-list {
-    list-style: circle;
-}
-
 .icons {
-    background-color: #ffd0003e;
+    background-color: #ffd00048;
 }
 
 .line {
@@ -155,6 +151,11 @@ body {
     border-radius: 50%;
 }
 
+.problem-solved{
+    background-color: #9AF8AE;
+    color: #064614;
+    border-radius: 0 0 100px 0;
+}
 // Typography
 
 .big-title {
@@ -193,10 +194,6 @@ body {
     }
 }
 
-a {
-    cursor: none;
-}
-
 @media only screen and (max-width: 930px) {
     .heroImg {
         width: 320px;
@@ -223,6 +220,9 @@ a {
 
     .custom__cursor__inner,
     .custom__cursor__outer {
+        display: none;
+    }
+    .prototype{
         display: none;
     }
 }
