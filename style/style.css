@@ -71,9 +71,9 @@
 
 body {
   color: #121117;
-  overflow-x: hidden;
   cursor: none;
   font-family: "Satoshi Regular";
+  overflow-x: hidden;
 }
 
 .logo {
@@ -180,6 +180,12 @@ body {
   font-family: "Satoshi Medium";
 }
 
+.aboutme {
+  font-size: 26px;
+  line-height: 42px;
+  font-family: "Satoshi Medium";
+}
+
 .title {
   font-size: 30px;
   line-height: 52px;
@@ -229,7 +235,7 @@ body {
     line-height: 60px;
     font-family: "Satoshi Medium";
   }
-  .footer-logo {
+  #footer .footer-logo {
     display: none;
   }
   .custom__cursor__inner,
@@ -238,6 +244,10 @@ body {
   }
   .prototype {
     display: none;
+  }
+  .aboutme {
+    font-size: 18px;
+    line-height: 30px;
   }
 }
 
