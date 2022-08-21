@@ -75,9 +75,11 @@ body {
     width: 52px;
     height: auto;
 }
-.yellow{
+
+.yellow {
     color: $heading-col;
 }
+
 .primary-button {
     color: $secondary-col;
     background-color: $accent-col;
@@ -90,11 +92,13 @@ body {
     border-radius: 40px;
     box-shadow: 0px 10px 30px 2px rgba(77, 49, 0, 0.15);
 }
-.primary-button:hover{
+
+.primary-button:hover {
     transition: 300ms ease-out;
     background-color: $secondary-col;
     color: $primary-col;
 }
+
 .secondary-button {
     color: $heading-col;
     font-family: "Satoshi Medium";
@@ -135,6 +139,7 @@ body {
     width: 220px;
     height: 220px;
 }
+
 .icons {
     background-color: #ffd00048;
 }
@@ -152,11 +157,12 @@ body {
     border-radius: 50%;
 }
 
-.problem-solved{
+.problem-solved {
     background-color: #9AF8AE;
     color: #064614;
     border-radius: 0 0 100px 0;
 }
+
 // Typography
 
 .big-title {
@@ -164,11 +170,13 @@ body {
     line-height: 70px;
     font-family: "Satoshi Medium";
 }
-.aboutme{
+
+.aboutme {
     font-size: 26px;
     line-height: 42px;
     font-family: "Satoshi Medium";
 }
+
 .title {
     font-size: 30px;
     line-height: 52px;
@@ -199,6 +207,33 @@ body {
     }
 }
 
+.show-at-small {
+    display: none;
+
+    .small-box {
+        background-color: rgba(32, 32, 184, 0.145);
+    }
+}
+
+#uparrow {
+    display: none;
+    text-decoration: none;
+    position: fixed;
+    z-index: 999;
+    top: 88%;
+    right: 10%;
+    width: 48px;
+    height: 48px;
+    padding-top: 12px;
+    background-color: $primary-col;
+    opacity: 0.7;
+    border: 1px solid $secondary-col;
+    border-radius: 50%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: $secondary-col;
+}
 @media only screen and (max-width: 930px) {
     .heroImg {
         width: 320px;
@@ -210,28 +245,33 @@ body {
         line-height: 56px;
         font-family: "Satoshi Medium";
     }
-    .aboutme{
+
+    .aboutme {
         font-size: 18px;
         line-height: 42px;
         font-family: "Satoshi Medium";
     }
+
     .title {
         font-size: 20px;
         line-height: 32px;
         font-family: "Satoshi Medium";
     }
-    
+
     .subtitle {
         font-size: 16px;
         font-family: "Satoshi Regular";
     }
-    
+
     .category {
         font-size: 14px;
         font-family: "Satoshi Bold";
         text-transform: uppercase;
         letter-spacing: 0.3px;
         word-spacing: 4px;
+    }
+    #uparrow {
+        display: block;
     }
 }
 
@@ -250,15 +290,24 @@ body {
     .custom__cursor__outer {
         display: none;
     }
-    .aboutme{
+
+    .aboutme {
         font-size: 18px;
         line-height: 30px;
     }
-    .prototype{
+
+    .prototype {
         display: none;
     }
-}
 
+    .show-at-small {
+        display: block;
+
+        .small-box {
+            background-color: rgba(32, 32, 184, 0.145);
+        }
+    }
+}
 
 @media only screen and (max-width: 320px) {
     .big-title {
@@ -271,9 +320,11 @@ body {
         font-size: 16px;
     }
 }
-.mobile-menu{
+
+.mobile-menu {
     color: $secondary-col;
 }
-.mobile-nav-items li{
+
+.mobile-nav-items li {
     margin-top: 1em;
 }
