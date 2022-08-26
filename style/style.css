@@ -181,12 +181,6 @@ body {
   font-family: "Satoshi Medium";
 }
 
-.aboutme {
-  font-size: 26px;
-  line-height: 42px;
-  font-family: "Satoshi Medium";
-}
-
 .title {
   font-size: 30px;
   line-height: 52px;
@@ -195,6 +189,7 @@ body {
 
 .subtitle {
   font-size: 20px;
+  line-height: 38px;
   font-family: "Satoshi Regular";
 }
 
@@ -260,11 +255,6 @@ body {
     line-height: 56px;
     font-family: "Satoshi Medium";
   }
-  .aboutme {
-    font-size: 18px;
-    line-height: 42px;
-    font-family: "Satoshi Medium";
-  }
   .title {
     font-size: 20px;
     line-height: 32px;
@@ -272,6 +262,7 @@ body {
   }
   .subtitle {
     font-size: 16px;
+    line-height: 32px;
     font-family: "Satoshi Regular";
   }
   .category {
@@ -298,10 +289,6 @@ body {
   .custom__cursor__inner,
   .custom__cursor__outer {
     display: none;
-  }
-  .aboutme {
-    font-size: 18px;
-    line-height: 30px;
   }
   .prototype {
     display: none;
