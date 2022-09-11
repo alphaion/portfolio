@@ -42,11 +42,13 @@ $heading-col: #2A25F3;
 
     p{
         position: absolute;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
         font-family: "Satoshi Regular";
         top: 40%;
         left: 50%;
         transform: translate(-50%, 50%);
-        font-size: 4vw;
+        font-size: 20px;
     }
 }
 .custom__cursor__inner {
