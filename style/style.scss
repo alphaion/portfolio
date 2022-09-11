@@ -15,8 +15,8 @@
 
 $primary-col: #ffffff;
 $secondary-col: #121117;
-$accent-col: #FFD000;
-$heading-col: #C1A10F;
+$accent-col: #2A25F3;
+$heading-col: #2A25F3;
 
 * {
     padding: 0;
@@ -28,9 +28,27 @@ $heading-col: #C1A10F;
 
 ::selection {
     background-color: $accent-col;
-    color: $secondary-col;
+    color: $primary-col;
 }
+.preloader{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $accent-col;
+    color: $primary-col;
+    z-index: 9999;
 
+    p{
+        position: absolute;
+        font-family: "Satoshi Regular";
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        font-size: 4vw;
+    }
+}
 .custom__cursor__inner {
     height: 10px;
     width: 10px;
@@ -47,7 +65,7 @@ $heading-col: #C1A10F;
     height: 42px;
     width: 42px;
     border-radius: 50%;
-    border: 1px solid #996300;
+    border: 1px solid #121117;
     background-color: $accent-col;
     position: fixed;
     z-index: 5000;
@@ -66,7 +84,6 @@ $heading-col: #C1A10F;
 
 body {
     color: $secondary-col;
-    cursor: none;
     font-family: "Satoshi Regular";
     overflow-x: hidden;
 }
@@ -81,7 +98,7 @@ body {
 }
 
 .primary-button {
-    color: $secondary-col;
+    color: $primary-col;
     background-color: $accent-col;
     font-size: 14px;
     font-weight: bolder;
@@ -114,7 +131,7 @@ body {
 .fa-envelope {
     border-radius: 50%;
     padding: 1em;
-    color: $secondary-col;
+    color: $primary-col;
     transform: scale(1.5);
     background-color: $accent-col;
 }
@@ -141,7 +158,8 @@ body {
 }
 
 .icons {
-    background-color: #ffd00048;
+    background-color: #2825f37e;
+    color: $secondary-col;
 }
 
 .line {
@@ -183,12 +201,24 @@ body {
     font-family: "Satoshi Regular";
 }
 
-.category {
+.tags{
     font-size: 14px;
     font-family: "Satoshi Bold";
     text-transform: uppercase;
-    letter-spacing: 0.3px;
-    word-spacing: 4px;
+    padding: 0.4em 1.2em;
+    background-color: $accent-col;
+    color: $primary-col;
+    display: inline;
+    border-radius: 24px;
+}
+.caption {
+    font-size: 16px;
+    letter-spacing: 0.8px;
+    font-family: "Satoshi Bold";
+    text-transform: uppercase;
+}
+.accent-col{
+    color: $accent-col;
 }
 
 .case-study-cover {
@@ -252,8 +282,12 @@ body {
         line-height: 32px;
         font-family: "Satoshi Regular";
     }
-
-    .category {
+    .tags{
+        font-size: 10px;
+        font-family: "Satoshi Medium";
+        padding: 0.4em 1.2em;
+    }
+    .caption {
         font-size: 14px;
         font-family: "Satoshi Bold";
         text-transform: uppercase;

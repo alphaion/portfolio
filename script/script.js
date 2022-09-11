@@ -1,3 +1,6 @@
+$(window).on('load', function(){
+    $('.preloader').delay(2400).fadeOut('slow');
+ });
 //Jquery For Cursor
 $(window).ready(function () {
 
@@ -31,10 +34,3 @@ const menu = document.querySelector(".mobile-menu");
 btn.addEventListener("click", () => {
     menu.classList.toggle("hidden");
 });
-
-// const items = ["./res/images/heroImg01.svg", "./res/images/heroImg02.svg"];
-
-// function random_item(items) {
-//     return items[Math.floor(Math.random() * items.length)];
-// }
-// document.getElementById('mainImg').srcset = random_item(items);
