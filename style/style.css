@@ -44,29 +44,20 @@
   font-size: 20px;
 }
 
-.custom__cursor__inner {
-  height: 10px;
-  width: 10px;
-  position: fixed;
-  transform: translate(0px, 0px);
-  background-color: #2a25f3;
-  border-radius: 50%;
-  transition: height 0.3s cubic-bezier(0.46, 0.03, 0.52, 0.96), width 0.3s cubic-bezier(0.46, 0.03, 0.52, 0.96);
-  z-index: 5000;
-  pointer-events: none;
-}
-
 .custom__cursor__outer {
-  height: 42px;
-  width: 42px;
   border-radius: 50%;
-  border: 1px solid #121117;
-  background-color: #2a25f3;
   position: fixed;
   z-index: 5000;
   transform: translate(0px, 0px);
   pointer-events: none;
-  opacity: 0.2;
+  border: 1.5rem solid #fff;
+  filter: blur(115px);
+  height: 300px;
+  transition: transform 0.6s cubic-bezier(0.75, -1.27, 0.3, 2.33), opacity 0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33), background 0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+       user-select: none;
+  width: 300px;
 }
 
 .wrapper {

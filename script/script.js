@@ -22,7 +22,7 @@ $(window).ready(function () {
         xp += ((mouseX - xp) / 6);
         yp += ((mouseY - yp) / 6);
         $(".custom__cursor__outer").css({
-            transform: 'translateX(' + (xp - 9) + 'px) translateY(' + (yp - 9) + 'px)'
+            transform: 'translateX(' + (xp - 100) + 'px) translateY(' + (yp - 80) + 'px)'
         });
     }, 10);
 });
