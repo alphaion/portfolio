@@ -3516,6 +3516,7 @@ video.pgi-video {
 	}
 }
 
+
 /* Portfolio grid item title hover (no effect if "pgi-cap-inside" enabled!) */
 #portfolio-grid:not(.pgi-cap-inside) .pgi-title a {
 	display: inline;
@@ -6592,10 +6593,10 @@ body:not(.tt-np-image-on) .tt-np-ghost {
 }
 
 .tt-logo-wall .lv-client-light {
-	display: block;
+	display: none;
 }
 .tt-logo-wall .lv-client-dark {
-	display: none;
+	display: block;
 }
 
 /* Logo wall columns */
