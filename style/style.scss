@@ -153,7 +153,12 @@ body {
   width: 380px;
   height: auto;
 }
-
+.uxrishu-img{
+  width: 360px;
+  height: 360px;
+  border-radius: 50%;
+  object-fit: cover;
+}
 #myImg {
   width: 220px;
   height: 220px;
@@ -223,17 +228,6 @@ body {
   color: $accent-col;
 }
 
-.case-study-cover {
-  filter: grayscale(1);
-  transition: 500ms all ease-out;
-}
-
-.case-study:hover {
-  .case-study-cover {
-    filter: grayscale(0);
-  }
-}
-
 .show-at-small {
   display: none;
 
@@ -261,7 +255,9 @@ body {
   justify-content: center;
   color: $secondary-col;
 }
+
 @media only screen and (max-width: 930px) {
+  
   .heroImg {
     width: 320px;
     height: auto;
@@ -322,6 +318,10 @@ body {
       background-color: rgba(32, 32, 184, 0.145);
     }
   }
+  .uxrishu-img{
+    display: none;
+  }
+  
 }
 
 @media only screen and (max-width: 320px) {
@@ -353,7 +353,6 @@ body {
   }
 }
 .slider {
-  height: 100px;
   margin: 0.6em auto;
   overflow: hidden;
   position: relative;
@@ -364,8 +363,8 @@ body {
     width: calc(250px * 14);
   }
   .slide {
-    height: 100px;
-    width: 180px;
-    margin: 0em 4em;
+    width: 240px;
+    height: auto;
+    margin: 0em 2.5em;
   }
 }
