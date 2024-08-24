@@ -156,6 +156,55 @@ body {
   height: 220px;
 }
 
+.service-box-1 {
+  border: 2px rgba(74, 0, 224, 0.13) solid;
+  background: #fee7fe;
+}
+
+.service-box-2 {
+  border: 2px rgba(74, 0, 224, 0.13) solid;
+  background: #f1efe1;
+  display: flex;
+  flex-direction: column-reverse;
+  flex-flow: column-reverse;
+}
+
+.service-box-3 {
+  border: 2px rgba(74, 0, 224, 0.13) solid;
+  background: #d4effa;
+}
+
+.service-box {
+  border-radius: 30px;
+  border-width: 2px;
+}
+.service-box img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: auto;
+}
+.service-box .service-subtitle {
+  font-size: 18px;
+  line-height: 26px;
+  font-family: "FontB";
+}
+
+.heading {
+  font-size: 38px;
+  line-height: 46px;
+  font-family: "FontA";
+}
+
+.box {
+  width: auto;
+  height: auto;
+  padding: 6px 15px;
+  border-radius: 70px;
+  border: 1px #2a25f3 solid;
+  background: #eaeafe;
+  color: #2a25f3;
+}
+
 .icons {
   background-color: rgba(40, 37, 243, 0.4941176471);
   color: #121117;
