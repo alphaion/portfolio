@@ -401,7 +401,7 @@ body {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-2450px);
+    transform: translateX(-80%);
   }
 }
 .slider {
@@ -411,9 +411,10 @@ body {
   width: auto;
 }
 .slider .slide-track {
-  animation: scroll 20s linear infinite;
+  animation: scroll 16s linear infinite;
   display: flex;
-  width: 3500px;
+  width: 6000px;
+  align-items: center;
 }
 .slider .slide {
   width: 240px;
